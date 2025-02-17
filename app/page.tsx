@@ -1,18 +1,21 @@
+import Image from "next/image";
+
 export default function Home() {
   return (
-    <main className="p-6 max-w-3xl mx-auto">
-      <h1 className="text-4xl font-bold mb-6">Freddy Khant</h1>
-      <p className="mb-4">
-        hi, my name is freddy. i'm a 22 year old comp sci student with a passion
-        for building cool things. look around 😁
-      </p>
-      <h2 className="text-2xl font-semibold mb-3"> Projects </h2>
-      <ul className="list-disc pl-5">
-        <li>ai-chatbot</li>
-        <li>flex-ai</li>
-        <li>summary-ai</li>
-        <li>buildshare</li>
-      </ul>
-    </main>
+    <div className="max-w-4xl mx-auto px-4 py-8">
+      <header className="text-center mb-12">
+        <Image
+          src="/pfp.jpg"
+          alt="me"
+          width={150}
+          height={150}
+          className="rounded-full mx-auto mb-4"
+        />
+        <h1 className="text-3xl font-bold mb-2">Freddy Khant</h1>
+        <p className="text-xl text-gray-600 mb-4">
+          Software Engineering Student
+        </p>
+      </header>
+    </div>
   );
 }
