@@ -47,6 +47,32 @@ export default function Home() {
         <p className="text-xl text-gray-600 mb-4">
           software engineering student
         </p>
+        <div className="flex justify-center space-x-4">
+          <a
+            href="https://github.com/freddykhant"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-600 hover:text-gray-900"
+          >
+            <Github />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/freddykhant240/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-600 hover:text-gray-900"
+          >
+            <Linkedin />
+          </a>
+          <a
+            href="mailto:freddyhmk@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-600 hover:text-gray-900"
+          >
+            <Mail />
+          </a>
+        </div>
       </header>
 
       <section className="mb-12">
