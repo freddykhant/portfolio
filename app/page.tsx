@@ -48,7 +48,7 @@ export default function Home() {
           className="rounded-full mx-auto mb-4"
         />
         <h1 className="text-3xl font-bold mb-2">freddy khant</h1>
-        <p className="text-xl text-gray-600 mb-4">
+        <p className="text-xl text-muted-foreground mb-4">
           software engineering student
         </p>
         <div className="flex justify-center space-x-4">
@@ -81,10 +81,10 @@ export default function Home() {
 
       <section className="mb-12">
         <h2 className="text-2xl font-bold mb-4">about me</h2>
-        <p className="text-gray-700">
+        <p className="text-muted-foreground">
           i am a final year student studying bachelor of computing - software
           engineering @ curtin university. i love building cool projects and
-          have a keen interest in new and innovative technologies 💻.
+          have a keen interest in new and innovative tech 💻
         </p>
       </section>
 
@@ -97,7 +97,9 @@ export default function Home() {
               className="border rounded-lg p-4 hover:shadow-md transition-shadow"
             >
               <h3 className="font-semibold mb-2">{project.name}</h3>
-              <p className="text-gray-600 mb-2">{project.description}</p>
+              <p className="text-muted-foreground mb-2">
+                {project.description}
+              </p>
               <a
                 href={project.link}
                 target="_blank"
