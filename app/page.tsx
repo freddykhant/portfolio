@@ -56,8 +56,8 @@ export default function Home() {
         <Image
           src="/pfp.jpg"
           alt="me"
-          width={150}
-          height={150}
+          width={200}
+          height={200}
           className="rounded-full mx-auto mb-4"
         />
         <h1 className="text-3xl font-bold mb-2">freddy khant</h1>
