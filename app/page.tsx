@@ -125,6 +125,20 @@ export default function Home() {
           ))}
         </div>
       </section>
+
+      <section>
+        <h2 className="text-2xl font-bold mb-4">skills</h2>
+        <div className="flex flex-wrap gap-2">
+          {skills.map((skill, index) => (
+            <span
+              key={index}
+              className="bg-gray-200 dark:bg-gray-700 rounded-full px-3 py-1 text-sm"
+            >
+              {skill}
+            </span>
+          ))}
+        </div>
+      </section>
     </div>
   );
 }
