@@ -98,7 +98,12 @@ export default function Home() {
             >
               <h3 className="font-semibold mb-2">{project.name}</h3>
               <p className="text-gray-600 mb-2">{project.description}</p>
-              <a href={project.link} className="text-blue-600 hover:underline">
+              <a
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 hover:underline"
+              >
                 view project
               </a>
             </div>
