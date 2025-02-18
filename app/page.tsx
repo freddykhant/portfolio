@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Github, Linkedin, Mail } from "lucide-react";
+import { ModeToggle } from "@/components/mode-toggle";
 
 const projects = [
   {
@@ -36,6 +37,9 @@ export default function Home() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-8">
       <header className="text-center mb-12">
+        <div className="absolute right-0 top-0">
+          <ModeToggle />
+        </div>
         <Image
           src="/pfp.jpg"
           alt="me"
