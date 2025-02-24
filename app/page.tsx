@@ -97,9 +97,9 @@ export default function Home() {
         <h2 className="text-2xl font-bold mb-4">About Me</h2>
         <p className="text-muted-foreground">
           I'm Freddy, a final-year Software Engineering student who loves tech,
-          automation, and building things that make life easier. Whether it’s
-          coding, AI, or experimenting with new ideas, I enjoy the process of
-          learning and creating. 💻
+          automation, and building things that make life easier. Whether it’s a
+          hobby project, AI, or experimenting with new ideas, I enjoy the
+          process of learning and creating. 💻
         </p>
       </section>
 
