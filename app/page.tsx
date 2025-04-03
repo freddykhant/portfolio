@@ -23,7 +23,7 @@ const projects = [
   {
     name: "buildshare",
     description:
-      "a social media for tech setups, built as part of buildspace's s4 nights & weekends program",
+      "a social media for tech setups, built as part of buildspace&apos;s s4 nights & weekends program",
     link: "https://github.com/freddykhant/buildshare_app",
   },
   {
@@ -96,8 +96,8 @@ export default function Home() {
       <section className="mb-12">
         <h2 className="text-2xl font-bold mb-4">About Me</h2>
         <p className="text-muted-foreground">
-          I'm Freddy, a final-year Software Engineering student who loves tech,
-          automation, and building things that make life easier. Whether
+          I&apos;m Freddy, a final-year Software Engineering student who loves
+          tech, automation, and building things that make life easier. Whether
           it&apos;s a hobby project, AI, or experimenting with new ideas, I
           enjoy the process of learning and creating. 💻
         </p>
