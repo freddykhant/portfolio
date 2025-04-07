@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Github, Linkedin, Mail } from "lucide-react";
 import { ModeToggle } from "@/components/mode-toggle";
+import { FlipCard } from "@/components/flip-card";
 
 const projects = [
   {
@@ -104,18 +105,6 @@ export default function Home() {
       </section>
 
       <section className="mb-12">
-        <a
-          href="/about-me"
-          className="block border rounded-lg p-6 hover:shadow-md transition-shadow text-center"
-        >
-          <h2 className="text-2xl font-bold mb-2">Get to Really Know Me</h2>
-          <p className="text-muted-foreground">
-            Learn more about my personal life, hobbies, and interests
-          </p>
-        </a>
-      </section>
-
-      <section className="mb-12">
         <h2 className="text-2xl font-bold mb-4">Projects</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {projects.map((project, index) => (
@@ -152,6 +141,10 @@ export default function Home() {
             </span>
           ))}
         </div>
+      </section>
+
+      <section className="mt-24 mb-5">
+        <FlipCard />
       </section>
     </div>
   );
