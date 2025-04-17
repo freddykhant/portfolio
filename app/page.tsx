@@ -56,7 +56,7 @@ export default function Home() {
           <ModeToggle />
         </div>
         <Image
-          src="/pfp.jpg"
+          src="/logo.png"
           alt="me"
           width={200}
           height={200}
