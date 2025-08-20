@@ -9,6 +9,7 @@ import {
   Users,
   Globe,
   Scan,
+  Building2,
 } from "lucide-react";
 import { ModeToggle } from "@/components/mode-toggle";
 
@@ -34,17 +35,16 @@ const projects = [
     icon: FileBarChart,
   },
   {
-    name: "buildshare",
-    description:
-      "A social media for tech setups, built as part of buildspace's s4 nights & weekends program",
-    link: "https://github.com/freddykhant/buildshare_app",
-    icon: Users,
-  },
-  {
     name: "engraph",
     description: "AI powered insights on static engineering drawings",
     link: null, // work in progress
     icon: Scan,
+  },
+  {
+    name: "brokertel",
+    description: "Helping automate broker to client workflows",
+    link: null, // work in progress
+    icon: Building2,
   },
   {
     name: "portfolio",
@@ -265,7 +265,7 @@ export default function Home() {
             <div className="mt-12 flex justify-center">
               <div className="flex items-center gap-2 text-xs text-muted-foreground/60 uppercase tracking-wider">
                 <div className="w-8 h-px bg-border"></div>
-                <span>and more to come</span>
+                <span>and still learning</span>
                 <div className="w-8 h-px bg-border"></div>
               </div>
             </div>
