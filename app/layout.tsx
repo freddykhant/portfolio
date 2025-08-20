@@ -8,6 +8,11 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "Freddy Khant",
   description: "a website about freddy khant",
+  icons: {
+    icon: "/logo.png",
+    shortcut: "/logo.png",
+    apple: "/logo.png",
+  },
 };
 
 export default function RootLayout({
