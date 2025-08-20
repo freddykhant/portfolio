@@ -242,6 +242,15 @@ export default function Home() {
               </div>
             ))}
           </div>
+
+          {/* Additional Visual Elements */}
+          <div className="mt-12 flex justify-center">
+            <div className="flex items-center gap-2 text-xs text-muted-foreground/60 uppercase tracking-wider">
+              <div className="w-8 h-px bg-border"></div>
+              <span>more projects on github</span>
+              <div className="w-8 h-px bg-border"></div>
+            </div>
+          </div>
         </section>
 
         {/* Skills Section */}
