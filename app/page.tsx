@@ -15,6 +15,9 @@ import {
   X,
   Coffee,
   BookOpen,
+  Calendar,
+  MapPin,
+  Briefcase,
 } from "lucide-react";
 import { ModeToggle } from "@/components/mode-toggle";
 import { useState } from "react";
@@ -275,6 +278,154 @@ export default function Home() {
             <div className="flex items-center gap-2 text-xs text-muted-foreground/60 uppercase tracking-wider">
               <div className="w-8 h-px bg-border"></div>
               <span>more projects on github</span>
+              <div className="w-8 h-px bg-border"></div>
+            </div>
+          </div>
+        </section>
+
+        {/* Experience Section */}
+        <section className="py-20">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-semibold mb-4 tracking-[-0.01em]">
+              Experience
+            </h2>
+            <p className="text-base text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+              Professional journey and internships
+            </p>
+          </div>
+
+          <div className="max-w-4xl mx-auto space-y-8">
+            {/* Deloitte Experience */}
+            <div className="group relative bg-card/80 backdrop-blur-sm border border-border/50 rounded-2xl p-8 hover:bg-card transition-all duration-300 hover:shadow-xl hover:shadow-black/5 hover:-translate-y-1">
+              <div className="flex flex-col md:flex-row md:items-start gap-6">
+                {/* Company Icon & Timeline */}
+                <div className="flex-shrink-0">
+                  <div className="w-12 h-12 rounded-lg bg-gradient-to-r from-red-500/10 via-purple-500/10 to-blue-500/10 border border-border/30 flex items-center justify-center mb-4">
+                    <Briefcase className="w-6 h-6 text-foreground/70" />
+                  </div>
+                  <div className="hidden md:block w-px h-24 bg-border/30 ml-6"></div>
+                </div>
+
+                {/* Content */}
+                <div className="flex-1 space-y-4">
+                  <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+                    <h3 className="text-xl font-semibold tracking-[-0.01em]">
+                      Student Software Engineer
+                    </h3>
+                    <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                      <Calendar className="w-4 h-4" />
+                      <span>Mar 2025 - Current</span>
+                    </div>
+                  </div>
+
+                  <div className="flex items-center gap-2 text-base font-medium text-foreground/80">
+                    <MapPin className="w-4 h-4" />
+                    <span className="bg-gradient-to-r from-green-600 to-blue-600 bg-clip-text text-transparent">
+                      Deloitte
+                    </span>
+                  </div>
+
+                  <div className="space-y-3 text-sm text-foreground/70 leading-relaxed">
+                    <div className="flex items-start gap-2">
+                      <div className="w-1.5 h-1.5 rounded-full bg-foreground/30 mt-2 flex-shrink-0"></div>
+                      <p>Selected for Deloitte&apos;s 2025 Capstone Project</p>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <div className="w-1.5 h-1.5 rounded-full bg-foreground/30 mt-2 flex-shrink-0"></div>
+                      <p>
+                        Collaborating in a team of 5 to develop innovative tools
+                        exploring AI, LLMs, Computer Vision, and emerging
+                        technologies
+                      </p>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <div className="w-1.5 h-1.5 rounded-full bg-foreground/30 mt-2 flex-shrink-0"></div>
+                      <p>
+                        Utilizing agile frameworks and Atlassian suite (Jira,
+                        Confluence) for project management
+                      </p>
+                    </div>
+                    <div className="flex items-center gap-2 pt-2">
+                      <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></div>
+                      <span className="text-xs font-medium text-green-600 dark:text-green-400 uppercase tracking-wider">
+                        Work in Progress
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Redi Software Experience */}
+            <div className="group relative bg-card/80 backdrop-blur-sm border border-border/50 rounded-2xl p-8 hover:bg-card transition-all duration-300 hover:shadow-xl hover:shadow-black/5 hover:-translate-y-1">
+              <div className="flex flex-col md:flex-row md:items-start gap-6">
+                {/* Company Icon */}
+                <div className="flex-shrink-0">
+                  <div className="w-12 h-12 rounded-lg bg-gradient-to-r from-red-500/10 via-purple-500/10 to-blue-500/10 border border-border/30 flex items-center justify-center mb-4">
+                    <Briefcase className="w-6 h-6 text-foreground/70" />
+                  </div>
+                  <div className="hidden md:block w-px h-24 bg-border/30 ml-6"></div>
+                </div>
+
+                {/* Content */}
+                <div className="flex-1 space-y-4">
+                  <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+                    <h3 className="text-xl font-semibold tracking-[-0.01em]">
+                      Software Developer Intern
+                    </h3>
+                    <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                      <Calendar className="w-4 h-4" />
+                      <span>Nov 2024 - Mar 2025</span>
+                    </div>
+                  </div>
+
+                  <div className="flex items-center gap-2 text-base font-medium text-foreground/80">
+                    <MapPin className="w-4 h-4" />
+                    <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+                      Redi Software
+                    </span>
+                  </div>
+
+                  <div className="space-y-3 text-sm text-foreground/70 leading-relaxed">
+                    <div className="flex items-start gap-2">
+                      <div className="w-1.5 h-1.5 rounded-full bg-foreground/30 mt-2 flex-shrink-0"></div>
+                      <p>
+                        Collaborated in agile sprints with daily stand-ups and
+                        code reviews in fast-paced development environment
+                      </p>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <div className="w-1.5 h-1.5 rounded-full bg-foreground/30 mt-2 flex-shrink-0"></div>
+                      <p>
+                        Developed scalable Azure microservices using C# for
+                        enterprise-level backend architecture
+                      </p>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <div className="w-1.5 h-1.5 rounded-full bg-foreground/30 mt-2 flex-shrink-0"></div>
+                      <p>
+                        Researched and integrated open-source LLMs for
+                        AI-powered feature prototyping across internal projects
+                      </p>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <div className="w-1.5 h-1.5 rounded-full bg-foreground/30 mt-2 flex-shrink-0"></div>
+                      <p>
+                        Developed NLP applications with critical problem-solving
+                        for real-world client solutions
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Additional Visual Elements */}
+          <div className="mt-12 flex justify-center">
+            <div className="flex items-center gap-2 text-xs text-muted-foreground/60 uppercase tracking-wider">
+              <div className="w-8 h-px bg-border"></div>
+              <span>building experience</span>
               <div className="w-8 h-px bg-border"></div>
             </div>
           </div>
