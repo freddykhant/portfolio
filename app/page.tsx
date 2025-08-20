@@ -1,35 +1,56 @@
 import Image from "next/image";
-import { Github, Linkedin, Mail } from "lucide-react";
+import {
+  Github,
+  Linkedin,
+  Mail,
+  Bot,
+  Dumbbell,
+  FileBarChart,
+  Users,
+  Globe,
+  Scan,
+} from "lucide-react";
 import { ModeToggle } from "@/components/mode-toggle";
 
 const projects = [
   {
     name: "ai-chatbot",
-    description: "AI chatbot with RAG + web scraping capabilities 🤖",
+    description: "AI chatbot with RAG + web scraping capabilities",
     link: "https://github.com/freddykhant/ai-chatbot",
+    icon: Bot,
   },
   {
     name: "flex-ai",
     description:
-      "flex-ai is your personal trainer and chatbot in one, leveraging an RAG pipeline to retrieve info from academic research to answer your fitness questions💪",
+      "Your personal trainer and chatbot in one, leveraging an RAG pipeline to retrieve info from academic research to answer your fitness questions",
     link: "https://github.com/freddykhant/flex-ai",
+    icon: Dumbbell,
   },
   {
     name: "summary-ai",
     description:
-      "summary-ai is your intelligent csv analyser and summariser, using a RAG pipeline to extract key insights from your data files and provide concise, ai-powered summaries and insights 📊🧠",
+      "Intelligent CSV analyser and summariser, using a RAG pipeline to extract key insights from your data files and provide concise, AI-powered summaries and insights",
     link: "https://github.com/freddykhant/summary-ai",
+    icon: FileBarChart,
   },
   {
     name: "buildshare",
     description:
-      "a social media for tech setups, built as part of buildspace's s4 nights & weekends program",
+      "A social media for tech setups, built as part of buildspace's s4 nights & weekends program",
     link: "https://github.com/freddykhant/buildshare_app",
+    icon: Users,
+  },
+  {
+    name: "engraph",
+    description: "AI powered insights on static engineering drawings",
+    link: null, // work in progress
+    icon: Scan,
   },
   {
     name: "portfolio",
-    description: "this website right here 😁",
+    description: "This website right here",
     link: "https://github.com/freddykhant/portfolio",
+    icon: Globe,
   },
 ];
 
@@ -134,39 +155,78 @@ export default function Home() {
               Some things I've built along the way
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-6xl mx-auto">
             {projects.map((project, index) => (
               <div
                 key={index}
-                className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-6 hover:bg-card/70 transition-all duration-300 hover:scale-[1.02] hover:shadow-lg"
+                className="group relative bg-card/80 backdrop-blur-sm border border-border/50 rounded-2xl p-6 hover:bg-card transition-all duration-300 hover:shadow-xl hover:shadow-black/5 hover:-translate-y-1"
               >
-                <h3 className="text-lg font-medium mb-3 tracking-[-0.01em]">
-                  {project.name}
-                </h3>
-                <p className="text-muted-foreground mb-4 leading-relaxed text-sm">
-                  {project.description}
-                </p>
-                <a
-                  href={project.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center text-blue-600 dark:text-blue-400 hover:underline font-medium text-sm"
-                >
-                  view project
-                  <svg
-                    className="w-4 h-4 ml-1"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                    />
-                  </svg>
-                </a>
+                {/* Project Number */}
+                <div className="absolute top-4 right-4 w-8 h-8 rounded-full bg-muted/50 flex items-center justify-center">
+                  <span className="text-xs font-medium text-muted-foreground">
+                    {String(index + 1).padStart(2, "0")}
+                  </span>
+                </div>
+
+                {/* Project Icon/Badge */}
+                <div className="mb-4">
+                  <div className="w-10 h-10 rounded-lg bg-gradient-to-r from-red-500/10 via-purple-500/10 to-blue-500/10 border border-border/30 flex items-center justify-center">
+                    <project.icon className="w-5 h-5 text-foreground/70" />
+                  </div>
+                </div>
+
+                <div className="space-y-3">
+                  <h3 className="text-lg font-semibold tracking-[-0.01em] group-hover:text-foreground transition-colors">
+                    {project.name}
+                  </h3>
+
+                  <p className="text-muted-foreground text-sm leading-relaxed">
+                    {project.description}
+                  </p>
+
+                  <div className="pt-2">
+                    {project.link ? (
+                      <a
+                        href={project.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-1 text-sm font-medium text-foreground/70 hover:text-foreground transition-colors group/link"
+                      >
+                        <span>View project</span>
+                        <svg
+                          className="w-3 h-3 transition-transform group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                          />
+                        </svg>
+                      </a>
+                    ) : (
+                      <span className="inline-flex items-center gap-1 text-sm font-medium text-muted-foreground/60">
+                        <span>Work in progress</span>
+                        <svg
+                          className="w-3 h-3"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+                          />
+                        </svg>
+                      </span>
+                    )}
+                  </div>
+                </div>
               </div>
             ))}
           </div>
