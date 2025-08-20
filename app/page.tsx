@@ -62,92 +62,153 @@ export default function Home() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 max-w-4xl mx-auto px-4 py-8">
-        <header className="text-center mb-12">
-          <div className="absolute right-4 top-4">
-            <ModeToggle />
+      <div className="relative z-10 max-w-6xl mx-auto px-4 py-8">
+        {/* Mode Toggle */}
+        <div className="absolute right-4 top-4">
+          <ModeToggle />
+        </div>
+
+        {/* Hero Section */}
+        <section className="min-h-[80vh] flex flex-col items-center justify-center text-center py-20">
+          <div className="mb-8">
+            <Image
+              src="/pfp.jpg"
+              alt="Freddy Khant"
+              width={120}
+              height={120}
+              className="rounded-full mx-auto shadow-lg"
+            />
           </div>
-          <Image
-            src="/pfp.jpg"
-            alt="me"
-            width={200}
-            height={200}
-            className="rounded-full mx-auto mb-4 shadow-lg"
-          />
-          <h1 className="text-3xl font-bold mb-2">Freddy Khant</h1>
-          <p className="text-xl text-muted-foreground mb-4">
-            Software Engineering Student
+
+          <h1 className="text-4xl md:text-6xl font-semibold mb-6 tracking-[-0.02em] leading-[1.1]">
+            Hi, my name is{" "}
+            <span className="bg-gradient-to-r from-red-500 via-purple-500 to-blue-500 bg-clip-text text-transparent">
+              Freddy
+            </span>
+          </h1>
+
+          <p className="text-lg md:text-xl text-muted-foreground mb-8 font-normal leading-relaxed">
+            Welcome to my page
           </p>
-          <div className="flex justify-center space-x-4">
+
+          <p className="text-base text-muted-foreground mb-12 max-w-2xl leading-relaxed">
+            I'm a final-year Software Engineering student who loves tech,
+            automation, and building things that make life easier.
+          </p>
+
+          <div className="flex justify-center space-x-6">
             <a
               href="https://github.com/freddykhant"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white transition-colors"
+              className="p-3 rounded-full bg-card border border-border hover:bg-accent transition-all duration-200 hover:scale-110"
             >
-              <Github />
+              <Github className="w-6 h-6" />
             </a>
             <a
               href="https://www.linkedin.com/in/freddykhant240/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white transition-colors"
+              className="p-3 rounded-full bg-card border border-border hover:bg-accent transition-all duration-200 hover:scale-110"
             >
-              <Linkedin />
+              <Linkedin className="w-6 h-6" />
             </a>
             <a
               href="mailto:freddyhmk@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white transition-colors"
+              className="p-3 rounded-full bg-card border border-border hover:bg-accent transition-all duration-200 hover:scale-110"
             >
-              <Mail />
+              <Mail className="w-6 h-6" />
             </a>
           </div>
-        </header>
-
-        <section className="mb-12">
-          <h2 className="text-2xl font-bold mb-4">About Me</h2>
-          <p className="text-muted-foreground">
-            I&apos;m Freddy, a final-year Software Engineering student who loves
-            tech, automation, and building things that make life easier. Whether
-            it&apos;s a hobby project, or experimenting with new ideas, I enjoy
-            the process of learning and building 💻
-          </p>
         </section>
 
-        <section className="mb-12">
-          <h2 className="text-2xl font-bold mb-4">Projects</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        {/* Projects Section */}
+        <section className="py-20">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-semibold mb-4 tracking-[-0.01em]">
+              Projects
+            </h2>
+            <p className="text-base text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+              Some things I've built along the way
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
             {projects.map((project, index) => (
               <div
                 key={index}
-                className="bg-card border border-border rounded-lg p-4 hover:shadow-md transition-shadow"
+                className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-6 hover:bg-card/70 transition-all duration-300 hover:scale-[1.02] hover:shadow-lg"
               >
-                <h3 className="font-semibold mb-2">{project.name}</h3>
-                <p className="text-muted-foreground mb-2">
+                <h3 className="text-lg font-medium mb-3 tracking-[-0.01em]">
+                  {project.name}
+                </h3>
+                <p className="text-muted-foreground mb-4 leading-relaxed text-sm">
                   {project.description}
                 </p>
                 <a
                   href={project.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-blue-600 dark:text-blue-400 hover:underline font-medium"
+                  className="inline-flex items-center text-blue-600 dark:text-blue-400 hover:underline font-medium text-sm"
                 >
                   view project
+                  <svg
+                    className="w-4 h-4 ml-1"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                    />
+                  </svg>
                 </a>
               </div>
             ))}
           </div>
         </section>
 
-        <section>
-          <h2 className="text-2xl font-bold mb-4">Skills</h2>
-          <div className="flex flex-wrap gap-2">
+        {/* Skills Section */}
+        <section className="py-20">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-semibold mb-4 tracking-[-0.01em]">
+              Skills
+            </h2>
+            <p className="text-base text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+              Technologies I work with
+            </p>
+          </div>
+          <div className="flex flex-wrap justify-center gap-3 max-w-4xl mx-auto">
             {skills.map((skill, index) => (
               <span
                 key={index}
-                className="bg-secondary text-secondary-foreground rounded-full px-3 py-1 text-sm font-medium hover:bg-secondary/80 transition-colors"
+                className="bg-secondary/60 backdrop-blur-sm text-secondary-foreground rounded-full px-4 py-2 text-sm font-medium hover:bg-secondary/80 transition-all duration-200 hover:scale-105"
+              >
+                {skill}
+              </span>
+            ))}
+          </div>
+        </section>
+
+        {/* Skills Section */}
+        <section className="py-20">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 tracking-tight">
+              Skills
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Technologies I work with
+            </p>
+          </div>
+          <div className="flex flex-wrap justify-center gap-3 max-w-4xl mx-auto">
+            {skills.map((skill, index) => (
+              <span
+                key={index}
+                className="bg-secondary/60 backdrop-blur-sm text-secondary-foreground rounded-full px-4 py-2 text-sm font-medium hover:bg-secondary/80 transition-all duration-200 hover:scale-105"
               >
                 {skill}
               </span>
