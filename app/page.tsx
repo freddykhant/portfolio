@@ -58,14 +58,17 @@ const skills = [
   "python",
   "java",
   "c",
-  "c#",
   "html",
   "css",
   "javascript",
+  "typescript",
   "react",
+  "next.js",
+  "fastapi",
   "streamlit",
+  "supabase",
+  "postgresql",
   "langchain",
-  "langgraph",
 ];
 
 export default function Home() {
@@ -242,37 +245,30 @@ export default function Home() {
               Technologies I work with
             </p>
           </div>
-          <div className="flex flex-wrap justify-center gap-3 max-w-4xl mx-auto">
-            {skills.map((skill, index) => (
-              <span
-                key={index}
-                className="bg-secondary/60 backdrop-blur-sm text-secondary-foreground rounded-full px-4 py-2 text-sm font-medium hover:bg-secondary/80 transition-all duration-200 hover:scale-105"
-              >
-                {skill}
-              </span>
-            ))}
-          </div>
-        </section>
 
-        {/* Skills Section */}
-        <section className="py-20">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 tracking-tight">
-              Skills
-            </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Technologies I work with
-            </p>
-          </div>
-          <div className="flex flex-wrap justify-center gap-3 max-w-4xl mx-auto">
-            {skills.map((skill, index) => (
-              <span
-                key={index}
-                className="bg-secondary/60 backdrop-blur-sm text-secondary-foreground rounded-full px-4 py-2 text-sm font-medium hover:bg-secondary/80 transition-all duration-200 hover:scale-105"
-              >
-                {skill}
-              </span>
-            ))}
+          {/* Brand Dump Style Grid */}
+          <div className="max-w-6xl mx-auto">
+            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 items-center justify-items-center">
+              {skills.map((skill, index) => (
+                <div
+                  key={index}
+                  className="group flex items-center justify-center h-16 w-full max-w-[140px] px-4 py-3 rounded-lg bg-card/30 backdrop-blur-sm border border-border/30 hover:bg-card/50 hover:border-border/50 transition-all duration-300 hover:scale-105"
+                >
+                  <span className="text-sm font-medium text-foreground/70 group-hover:text-foreground transition-colors uppercase tracking-wide">
+                    {skill}
+                  </span>
+                </div>
+              ))}
+            </div>
+
+            {/* Additional Visual Elements */}
+            <div className="mt-12 flex justify-center">
+              <div className="flex items-center gap-2 text-xs text-muted-foreground/60 uppercase tracking-wider">
+                <div className="w-8 h-px bg-border"></div>
+                <span>and more to come</span>
+                <div className="w-8 h-px bg-border"></div>
+              </div>
+            </div>
           </div>
         </section>
       </div>
