@@ -358,9 +358,9 @@ export default function Home() {
               <div className="space-y-4 text-center">
                 <p className="text-base text-foreground/80 leading-relaxed">
                   For your efforts I&apos;ll let you get to know me a bit more.
-                  Outside of being a tech geek I&apos;m also hugely passionate about
-                  fitness, nutrition and training. Nothing makes me happier than
-                  being able to work out.
+                  Outside of being a tech geek I&apos;m also hugely passionate
+                  about fitness, nutrition and training. Nothing makes me
+                  happier than being able to work out.
                 </p>
 
                 <p className="text-base text-foreground/80 leading-relaxed">
@@ -384,8 +384,8 @@ export default function Home() {
                     <span className="font-medium">P.S.</span>
                   </div>
                   <p className="text-sm text-muted-foreground mt-2 leading-relaxed">
-                    I&apos;m thinking of expanding this little section and making it
-                    a journal 👀
+                    I&apos;m thinking of expanding this little section and
+                    making it a journal 👀
                   </p>
                 </div>
               </div>
