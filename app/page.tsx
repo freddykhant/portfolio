@@ -94,14 +94,19 @@ export default function Home() {
 
         {/* Hero Section */}
         <section className="min-h-[80vh] flex flex-col items-center justify-center text-center py-20">
-          <div className="mb-8">
-            <Image
-              src="/pfp.jpg"
-              alt="Freddy Khant"
-              width={120}
-              height={120}
-              className="rounded-full mx-auto shadow-lg"
-            />
+          <div className="mb-12 relative">
+            <div className="relative">
+              <Image
+                src="/pfp.jpg"
+                alt="Freddy Khant"
+                width={180}
+                height={180}
+                className="rounded-full mx-auto shadow-2xl ring-4 ring-white/10 dark:ring-black/10"
+                priority
+              />
+              {/* Subtle glow effect */}
+              <div className="absolute inset-0 rounded-full bg-gradient-to-r from-red-500/10 via-purple-500/10 to-blue-500/10 blur-xl scale-110 -z-10"></div>
+            </div>
           </div>
 
           <h1 className="text-4xl md:text-6xl font-semibold mb-6 tracking-[-0.02em] leading-[1.1]">
@@ -112,7 +117,7 @@ export default function Home() {
           </h1>
 
           <p className="text-lg md:text-xl text-muted-foreground mb-8 font-normal leading-relaxed">
-            Welcome to my page
+            Welcome to my page!
           </p>
 
           <p className="text-base text-muted-foreground mb-12 max-w-2xl leading-relaxed">
