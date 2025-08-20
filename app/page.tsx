@@ -120,30 +120,39 @@ export default function Home() {
             automation, and building things that make life easier.
           </p>
 
-          <div className="flex justify-center space-x-6">
+          <div className="flex justify-center space-x-4">
             <a
               href="https://github.com/freddykhant"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-3 rounded-full bg-card border border-border hover:bg-accent transition-all duration-200 hover:scale-110"
+              className="group relative p-4 rounded-xl bg-card/60 backdrop-blur-sm border border-border/40 hover:bg-card/80 hover:border-border/60 transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-black/5"
             >
-              <Github className="w-6 h-6" />
+              <Github className="w-5 h-5 text-foreground/70 group-hover:text-foreground transition-colors" />
+              <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 px-2 py-1 bg-popover text-popover-foreground text-xs rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none">
+                GitHub
+              </div>
             </a>
             <a
               href="https://www.linkedin.com/in/freddykhant240/"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-3 rounded-full bg-card border border-border hover:bg-accent transition-all duration-200 hover:scale-110"
+              className="group relative p-4 rounded-xl bg-card/60 backdrop-blur-sm border border-border/40 hover:bg-card/80 hover:border-border/60 transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-black/5"
             >
-              <Linkedin className="w-6 h-6" />
+              <Linkedin className="w-5 h-5 text-foreground/70 group-hover:text-foreground transition-colors" />
+              <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 px-2 py-1 bg-popover text-popover-foreground text-xs rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none">
+                LinkedIn
+              </div>
             </a>
             <a
               href="mailto:freddyhmk@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-3 rounded-full bg-card border border-border hover:bg-accent transition-all duration-200 hover:scale-110"
+              className="group relative p-4 rounded-xl bg-card/60 backdrop-blur-sm border border-border/40 hover:bg-card/80 hover:border-border/60 transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-black/5"
             >
-              <Mail className="w-6 h-6" />
+              <Mail className="w-5 h-5 text-foreground/70 group-hover:text-foreground transition-colors" />
+              <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 px-2 py-1 bg-popover text-popover-foreground text-xs rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none">
+                Email
+              </div>
             </a>
           </div>
         </section>
