@@ -18,7 +18,7 @@ export default function Home() {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
   const handleProjectClick = (project: Project) => {
-    if (project.name === "flex-ai" || project.name === "summary-ai") {
+    if (project.name === "flex-ai" || project.name === "summary-ai" || project.name === "oasisgarden") {
       setSelectedProject(project);
       setShowProjectModal(true);
     } else if (project.link) {

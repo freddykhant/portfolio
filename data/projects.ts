@@ -24,7 +24,7 @@ export const projects: Project[] = [
     icon: FileBarChart,
   },
   {
-    name: "mygreenspace",
+    name: "oasisgarden",
     description: "iOS app for gardening enthusiasts, built using SwiftUI",
     link: "https://github.com/freddykhant/mygreenspace",
     icon: Leaf,

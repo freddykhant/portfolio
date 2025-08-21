@@ -1,5 +1,12 @@
 import Image from "next/image";
-import { X, Dumbbell, FileBarChart, Github, ExternalLink } from "lucide-react";
+import {
+  X,
+  Dumbbell,
+  FileBarChart,
+  Leaf,
+  Github,
+  ExternalLink,
+} from "lucide-react";
 import { Project } from "@/types";
 
 interface ProjectModalProps {
@@ -16,7 +23,9 @@ export default function ProjectModal({
   if (
     !isOpen ||
     !project ||
-    (project.name !== "flex-ai" && project.name !== "summary-ai")
+    (project.name !== "flex-ai" &&
+      project.name !== "summary-ai" &&
+      project.name !== "oasisgarden")
   )
     return null;
 
@@ -74,6 +83,35 @@ export default function ProjectModal({
           command: "python app.py && npm run dev",
         },
         githubUrl: "https://github.com/freddykhant/summary-ai",
+      };
+    } else if (project.name === "oasisgarden") {
+      return {
+        icon: <Leaf className="w-8 h-8 text-foreground/70" />,
+        title: "OasisGarden",
+        subtitle:
+          "iOS marketplace app for gardening supplies and local store discovery",
+        description:
+          "OasisGarden is a comprehensive iOS shopping app designed for gardening enthusiasts who want to easily discover and purchase quality gardening supplies. Built with SwiftUI, the app connects users with local garden centers and nurseries, featuring detailed product catalogs, exclusive store specials, and location-based store discovery. Whether you're a seasoned gardener or just starting your green journey, OasisGarden simplifies the process of finding and buying everything you need for your garden.",
+        techStack: [
+          "Swift",
+          "SwiftUI",
+          "CoreData",
+          "MapKit",
+          "CoreLocation",
+          "iOS",
+        ],
+        screenshots: [1, 2, 3, 4, 5, 6],
+        screenshotPath: "/projects/oasisgarden/oasisgarden",
+        steps: [
+          "Browse and buy gardening supplies for your personal garden collection with detailed profiles",
+          "View specials from local stores",
+          "Check the locations of your local stores based on your location",
+        ],
+        quickStart: {
+          description: "Available on the App Store for iPhone and iPad:",
+          command: "Build and Run on Xcode",
+        },
+        githubUrl: "https://github.com/freddykhant/mygreenspace",
       };
     }
     return null;
