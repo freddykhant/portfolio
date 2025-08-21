@@ -8,7 +8,7 @@ export const experiences: Experience[] = [
     gradient: "from-green-600 to-blue-600",
     isActive: true,
     description: [
-      "Selected for Deloitte&apos;s 2025 Capstone Project",
+      "Selected for Deloitte's 2025 Capstone Project",
       "Collaborating in a team of 5 to develop innovative tools exploring AI, LLMs, Computer Vision, and emerging technologies",
       "Utilizing agile frameworks and Atlassian suite (Jira, Confluence) for project management",
     ],
