@@ -40,7 +40,7 @@ export default function ProjectModal({
           "Python",
         ],
         screenshots: [1, 2, 3, 4],
-        screenshotPath: "/projects/flex-ai",
+        screenshotPath: "/projects/flex-ai/flex-ai",
         steps: [
           "Users input training or nutrition questions through the Streamlit interface",
           "The RAG pipeline searches through the ChromaDB vector store containing fitness research PDFs",
@@ -71,7 +71,7 @@ export default function ProjectModal({
           "Chart.js",
         ],
         screenshots: [1, 2, 3],
-        screenshotPath: "/projects/summary-ai",
+        screenshotPath: "/projects/summary-ai/summary-ai",
         steps: [
           "Users upload CSV files through the intuitive Next.js frontend interface",
           "Flask backend processes the data and generates initial statistical analysis",
