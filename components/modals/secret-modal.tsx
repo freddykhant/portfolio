@@ -55,12 +55,12 @@ export default function SecretModal({ isOpen, onClose }: SecretModalProps) {
             <p className="text-base text-foreground/80 leading-relaxed">
               I am also passionate about bartending. I currently work as a bar
               manager at{" "}
-              <span className="font-semibold bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent">
+              <span className="font-semibold bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
                 Butterfly73
               </span>{" "}
               and lead an amazing team. I learned my roots for
               bartending/mixology at{" "}
-              <span className="font-semibold bg-gradient-to-r from-purple-500 to-blue-500 bg-clip-text text-transparent">
+              <span className="font-semibold bg-gradient-to-r from-green-500 to-black bg-clip-text text-transparent">
                 Alibi
               </span>
               , this was the place that added depths to my skills.
