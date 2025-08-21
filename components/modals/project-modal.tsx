@@ -30,15 +30,7 @@ export default function ProjectModal({
           "An interactive AI personal trainer for hypertrophy, resistance training, and nutrition",
         description:
           "Flex AI is a Streamlit app that answers training and nutrition questions using a retrieval-augmented generation (RAG) pipeline. It combines LangGraph/LangChain with Ollama and a local ChromaDB vector store seeded from PDF files to provide evidence-backed, context-aware responses.",
-        techStack: [
-          "Streamlit",
-          "LangGraph",
-          "LangChain",
-          "Ollama",
-          "ChromaDB",
-          "RAG Pipeline",
-          "Python",
-        ],
+        techStack: ["Streamlit", "LangChain", "Ollama", "ChromaDB", "Python"],
         screenshots: [1, 2, 3, 4],
         screenshotPath: "/projects/flex-ai/flex-ai",
         steps: [
@@ -68,7 +60,6 @@ export default function ProjectModal({
           "Next.js",
           "TypeScript",
           "TailwindCSS",
-          "Chart.js",
         ],
         screenshots: [1, 2, 3],
         screenshotPath: "/projects/summary-ai/summary-ai",
