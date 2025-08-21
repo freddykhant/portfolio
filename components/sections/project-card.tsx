@@ -6,7 +6,11 @@ interface ProjectCardProps {
   onProjectClick: (project: Project) => void;
 }
 
-export default function ProjectCard({ project, index, onProjectClick }: ProjectCardProps) {
+export default function ProjectCard({
+  project,
+  index,
+  onProjectClick,
+}: ProjectCardProps) {
   return (
     <div
       onClick={() => onProjectClick(project)}
@@ -36,7 +40,7 @@ export default function ProjectCard({ project, index, onProjectClick }: ProjectC
         </p>
 
         <div className="pt-2">
-          {project.name === "flex-ai" ? (
+          {project.name === "flex-ai" || project.name === "summary-ai" ? (
             <span className="inline-flex items-center gap-1 text-sm font-medium text-foreground/70">
               <span>Click to explore</span>
               <svg

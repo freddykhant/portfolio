@@ -44,7 +44,9 @@ export default function ExperienceSection() {
 
                 <div className="flex items-center gap-2 text-base font-medium text-foreground/80">
                   <MapPin className="w-4 h-4" />
-                  <span className={`bg-gradient-to-r ${experience.gradient} bg-clip-text text-transparent`}>
+                  <span
+                    className={`bg-gradient-to-r ${experience.gradient} bg-clip-text text-transparent`}
+                  >
                     {experience.company}
                   </span>
                 </div>

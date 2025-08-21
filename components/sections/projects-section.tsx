@@ -6,7 +6,9 @@ interface ProjectsSectionProps {
   onProjectClick: (project: Project) => void;
 }
 
-export default function ProjectsSection({ onProjectClick }: ProjectsSectionProps) {
+export default function ProjectsSection({
+  onProjectClick,
+}: ProjectsSectionProps) {
   return (
     <section className="py-20">
       <div className="text-center mb-16">

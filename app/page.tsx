@@ -18,7 +18,7 @@ export default function Home() {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
   const handleProjectClick = (project: Project) => {
-    if (project.name === "flex-ai") {
+    if (project.name === "flex-ai" || project.name === "summary-ai") {
       setSelectedProject(project);
       setShowProjectModal(true);
     } else if (project.link) {
@@ -59,7 +59,7 @@ export default function Home() {
         isOpen={showSecretModal}
         onClose={() => setShowSecretModal(false)}
       />
-      
+
       <ProjectModal
         isOpen={showProjectModal}
         project={selectedProject}

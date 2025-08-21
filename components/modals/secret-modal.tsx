@@ -11,11 +11,11 @@ export default function SecretModal({ isOpen, onClose }: SecretModalProps) {
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
       {/* Backdrop */}
-      <div 
+      <div
         className="absolute inset-0 bg-black/60 backdrop-blur-sm"
         onClick={onClose}
       />
-      
+
       {/* Modal */}
       <div className="relative w-full max-w-2xl mx-auto bg-card/95 backdrop-blur-xl border border-border/50 rounded-2xl p-8 shadow-2xl animate-in fade-in slide-in-from-bottom-4 zoom-in-95 duration-500">
         {/* Close Button */}
@@ -47,14 +47,14 @@ export default function SecretModal({ isOpen, onClose }: SecretModalProps) {
           <div className="space-y-4 text-center">
             <p className="text-base text-foreground/80 leading-relaxed">
               For your efforts I&apos;ll let you get to know me a bit more.
-              Outside of being a tech geek I&apos;m also hugely passionate
-              about fitness, nutrition and training. Nothing makes me
-              happier than being able to work out.
+              Outside of being a tech geek I&apos;m also hugely passionate about
+              fitness, nutrition and training. Nothing makes me happier than
+              being able to work out.
             </p>
-            
+
             <p className="text-base text-foreground/80 leading-relaxed">
-              I am also passionate about bartending. I currently work as a
-              bar manager at{" "}
+              I am also passionate about bartending. I currently work as a bar
+              manager at{" "}
               <span className="font-semibold bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent">
                 butterfly73
               </span>{" "}
@@ -73,8 +73,8 @@ export default function SecretModal({ isOpen, onClose }: SecretModalProps) {
                 <span className="font-medium">P.S.</span>
               </div>
               <p className="text-sm text-muted-foreground mt-2 leading-relaxed">
-                I&apos;m thinking of expanding this little section and
-                making it a journal 👀
+                I&apos;m thinking of expanding this little section and making it
+                a journal 👀
               </p>
             </div>
           </div>
@@ -86,9 +86,7 @@ export default function SecretModal({ isOpen, onClose }: SecretModalProps) {
               <div className="text-xs text-muted-foreground uppercase tracking-wider">
                 Passion
               </div>
-              <div className="text-sm font-semibold">
-                Fitness & Training
-              </div>
+              <div className="text-sm font-semibold">Fitness & Training</div>
             </div>
             <div className="text-center p-4 rounded-xl bg-muted/30 border border-border/20">
               <Coffee className="w-6 h-6 mx-auto mb-2 text-orange-500" />
