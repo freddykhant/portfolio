@@ -1,5 +1,4 @@
 import {
-  Bot,
   Dumbbell,
   FileBarChart,
   Leaf,
@@ -10,12 +9,6 @@ import {
 import { Project } from "@/types";
 
 export const projects: Project[] = [
-  {
-    name: "ai-chatbot",
-    description: "AI chatbot with RAG + web scraping capabilities",
-    link: "https://github.com/freddykhant/ai-chatbot",
-    icon: Bot,
-  },
   {
     name: "flex-ai",
     description:
@@ -37,6 +30,12 @@ export const projects: Project[] = [
     icon: Leaf,
   },
   {
+    name: "portfolio",
+    description: "This website right here",
+    link: "https://github.com/freddykhant/portfolio",
+    icon: Globe,
+  },
+  {
     name: "engraph",
     description: "AI powered insights on static engineering drawings",
     link: null, // work in progress
@@ -47,12 +46,6 @@ export const projects: Project[] = [
     description: "Helping automate broker to client workflows",
     link: null, // work in progress
     icon: Building2,
-  },
-  {
-    name: "portfolio",
-    description: "This website right here",
-    link: "https://github.com/freddykhant/portfolio",
-    icon: Globe,
   },
 ];
 
