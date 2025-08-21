@@ -101,7 +101,7 @@ export default function ProjectModal({
         subtitle:
           "iOS marketplace app for gardening supplies and local store discovery",
         description:
-          "OasisGarden is a comprehensive iOS shopping app designed for gardening enthusiasts who want to easily discover and purchase quality gardening supplies. Built with SwiftUI, the app connects users with local garden centers and nurseries, featuring detailed product catalogs, exclusive store specials, and location-based store discovery. Whether you're a seasoned gardener or just starting your green journey, OasisGarden simplifies the process of finding and buying everything you need for your garden.",
+          "OasisGarden is a comprehensive iOS shopping app designed for gardening enthusiasts who want to easily discover and purchase quality gardening supplies. Built with SwiftUI, the app connects users with local garden centers and nurseries, featuring detailed product catalogs, exclusive store specials, and location-based store discovery. Whether you&apos;re a seasoned gardener or just starting your green journey, OasisGarden simplifies the process of finding and buying everything you need for your garden.",
         techStack: [
           "Swift",
           "SwiftUI",

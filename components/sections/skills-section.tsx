@@ -8,7 +8,7 @@ export default function SkillsSection() {
           Skills
         </h2>
         <p className="text-base text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-          Technologies I've worked with
+          Technologies I&apos;ve worked with
         </p>
       </div>
 
