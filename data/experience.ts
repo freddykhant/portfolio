@@ -4,7 +4,7 @@ export const experiences: Experience[] = [
   {
     company: "Deloitte",
     role: "Student Software Engineer",
-    period: "Mar 2025 - Current",
+    period: "Mar 2025 - Nov 2025",
     gradient: "from-green-600 to-blue-600",
     isActive: true,
     description: [

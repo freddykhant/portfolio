@@ -73,8 +73,7 @@ export default function SecretModal({ isOpen, onClose }: SecretModalProps) {
                 <span className="font-medium">P.S.</span>
               </div>
               <p className="text-sm text-muted-foreground mt-2 leading-relaxed">
-                I&apos;m thinking of expanding this little section and making it
-                a journal 👀
+                Stay tuned for a potential journal here👀
               </p>
             </div>
           </div>

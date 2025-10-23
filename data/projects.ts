@@ -38,7 +38,7 @@ export const projects: Project[] = [
   {
     name: "engraph",
     description: "AI powered insights on static engineering drawings",
-    link: null, // work in progress
+    link: "https://github.com/freddykhant/engraph",
     icon: Scan,
   },
   {

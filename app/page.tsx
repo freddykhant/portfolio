@@ -21,7 +21,8 @@ export default function Home() {
     if (
       project.name === "flex-ai" ||
       project.name === "summary-ai" ||
-      project.name === "oasisgarden"
+      project.name === "oasisgarden" ||
+      project.name === "engraph"
     ) {
       setSelectedProject(project);
       setShowProjectModal(true);

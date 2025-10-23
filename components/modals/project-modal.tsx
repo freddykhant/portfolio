@@ -4,6 +4,7 @@ import {
   Dumbbell,
   FileBarChart,
   Leaf,
+  Scan,
   Github,
   ExternalLink,
   ChevronLeft,
@@ -46,7 +47,8 @@ export default function ProjectModal({
     !project ||
     (project.name !== "flex-ai" &&
       project.name !== "summary-ai" &&
-      project.name !== "oasisgarden")
+      project.name !== "oasisgarden" &&
+      project.name !== "engraph")
   )
     return null;
 
@@ -134,6 +136,41 @@ export default function ProjectModal({
         },
         githubUrl: "https://github.com/freddykhant/mygreenspace",
       };
+    } else if (project.name === "engraph") {
+      return {
+        icon: <Scan className="w-8 h-8 text-foreground/70" />,
+        title: "Engraph",
+        subtitle:
+          "Transforms static engineering diagrams into intelligent, searchable knowledge using AI",
+        description:
+          "Engraph is an AI-powered platform that processes P&ID (Piping and Instrumentation Diagram) files through a cloud-native pipeline combining computer vision, OCR, and graph databases. It detects symbols, lines, and text, builds relational connections, and enables engineers to query their diagrams conversationally through a Next.js + FastAPI + Azure OpenAI stack.",
+        techStack: [
+          "Next.js 15",
+          "FastAPI",
+          "Azure OpenAI",
+          "YOLOv11",
+          "Neo4j",
+          "PostgreSQL",
+          "Docker",
+          "Terraform",
+        ],
+        screenshots: [1, 2, 3, 4],
+        screenshotPath: "/projects/engraph/engraph",
+        steps: [
+          "Engineers upload a P&ID diagram through the Next.js web interface",
+          "The FastAPI backend stores the file in the cloud via the object storage layer (Azure Blob or AWS S3)",
+          "The Computer Vision pipeline (YOLOv11 + Tesseract OCR + OpenCV) detects symbols, lines, and text",
+          "Extracted data is structured and stored in Neo4j as a connected knowledge graph",
+          "Users interact with the AI chat interface powered by Azure OpenAI (GPT-4o-mini)",
+          "The LLM interprets natural-language queries, generates Cypher queries to Neo4j, retrieves relevant data, and returns clear, contextual answers in chat",
+          "Engineers gain instant insights into system components, flow paths, and relationships within their diagrams",
+        ],
+        quickStart: {
+          description: "Work in progress - full stack deployment with Docker:",
+          command: "docker-compose up --build",
+        },
+        githubUrl: "https://github.com/freddykhant/engraph",
+      };
     }
     return null;
   };
@@ -216,7 +253,7 @@ export default function ProjectModal({
               {content.screenshots.map((num) => (
                 <div key={num} className="group relative">
                   <div
-                    className="aspect-video bg-muted/20 rounded-xl border border-border/30 overflow-hidden cursor-pointer"
+                    className="aspect-[9/16] bg-muted/20 rounded-xl border border-border/30 overflow-hidden cursor-pointer"
                     onClick={() => openLightbox(num)}
                   >
                     <Image
