@@ -6,11 +6,11 @@ export const experiences: Experience[] = [
     role: "Student Software Engineer",
     period: "Mar 2025 - Nov 2025",
     gradient: "from-green-600 to-blue-600",
-    isActive: true,
+    isActive: false,
     description: [
       "Selected for Deloitte's 2025 Capstone Project",
-      "Collaborating in a team of 5 to develop innovative tools exploring AI, LLMs, Computer Vision, and emerging technologies",
-      "Utilizing agile frameworks and Atlassian suite (Jira, Confluence) for project management",
+      "Worked in a team of 5, utilising the agile framework and Atlassian suite (Jira, Confluence) for project management",
+      "Built and shipped Engraph - a product that utilises AI and Computer Vision to allow intuitive analysis and interaction of Piping & Instrumentation Diagrams",
     ],
   },
   {
