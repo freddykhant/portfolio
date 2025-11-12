@@ -43,7 +43,7 @@ export default function Home() {
           <ModeToggle />
         </div>
 
-        {/* Secret Button - Hidden in plain sight */}
+        {/* Secret Button */}
         <SecretButton onClick={() => setShowSecretModal(true)} />
 
         {/* Hero Section */}

@@ -26,13 +26,11 @@ export default function HeroSection() {
         </span>
       </h1>
 
-      <p className="text-lg md:text-xl text-muted-foreground mb-8 font-normal leading-relaxed">
-        Welcome to my page!
-      </p>
-
       <p className="text-base text-muted-foreground mb-12 max-w-2xl leading-relaxed">
-        I&apos;m a final-year Software Engineering student who loves tech,
-        automation, and building things that make life easier.
+        I&apos;m a SWE graduate who loves learning by building things.
+      </p>
+      <p className="text-base text-muted-foreground mb-12 max-w-2xl leading-relaxed">
+        go on, have a geez.
       </p>
 
       <div className="flex justify-center space-x-4">
