@@ -47,6 +47,12 @@ export const projects: Project[] = [
     link: null, // work in progress
     icon: Building2,
   },
+  {
+    name: "travelog",
+    description: "Making trip planning simpler",
+    link: null, // work in progress
+    icon: Building2,
+  },
 ];
 
 export const skills = [
