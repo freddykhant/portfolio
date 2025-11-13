@@ -5,6 +5,7 @@ import {
   Scan,
   Building2,
   Globe,
+  Plane,
 } from "lucide-react";
 import { Project } from "@/types";
 
@@ -51,7 +52,7 @@ export const projects: Project[] = [
     name: "travelog",
     description: "Making trip planning simpler",
     link: null, // work in progress
-    icon: Building2,
+    icon: Plane,
   },
 ];
 
